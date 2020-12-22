@@ -34,6 +34,14 @@
           <label for="">expired date</label>
           <input name = "date" type="date" placeholder = "expired date" class="form-control" value="{{$product->expireddate}}">
         </div>
+        <div class ="mb-3">
+          <label for="">category</label>
+          <select name="category_id" class="form-control" placeholder ="category">
+            @foreach ($categories as $category)
+            <option value="{{$category->id}}">{{$category->category}}</option>
+            @endforeach
+          </select>
+        </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     </div>

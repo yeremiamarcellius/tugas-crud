@@ -20,6 +20,8 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->integer('stock');
             $table->date('expireddate');
+            $table->bigInteger('category_id')->unsigned()->nullable();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

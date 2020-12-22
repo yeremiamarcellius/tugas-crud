@@ -41,8 +41,12 @@
             @endforeach
         </tbody>
     </table>
-    <a href = "{{route('create')}}" class = "btn btn-primary" style = "display: block; margin: auto; width: 50%">
+    <a href = "{{route('create')}}" class = "btn btn-primary" style = "display: block; margin: auto; width: 20%">
         Create data product
+    </a>
+    <br>
+    <a href = "{{route('category')}}" class = "btn btn-primary" style = "display: block; margin: auto; width: 20%">
+        Category
     </a>
 </body>
 </html>
